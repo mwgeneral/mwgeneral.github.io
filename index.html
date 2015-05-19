@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link rel="stylesheet" href="style.css">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
 	<style>
 body {
 	font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -13,33 +14,38 @@ h1 {
     text-align: center;
 }
 </style>
+
 </head>
 <body>
 
-<link rel="stylesheet" href="css.css" id="theme">
 
+<link rel="stylesheet" href="css.css" id="theme">
+<center>
+<div style = "left:0;right:0;position:fixed;">
 <ul2><li>Home</li>
   <li>About</li>
   <li>
-    <A HREF="#codeword">portfolio</A>
+   <A HREF="#portfolio">portfolio</A>
     
   </li>
   <li>Blog</li>
   <li>Contact</li>
 </ul2>
+</div>
+</center>
+<br><br>
 <center>
 <h1>MAXWELL KING-WILSON</h1>
-
 </center>
 
 <div style ="margin-left:30%">
-<b>CONTACT</b>
-<ul>
-	<li>Phone: 704-208-9201  </li>
-	<li>E-Mail: <a href="mailto:Maxwell.KingWilson@gmail.com" target="_top">Maxwell.KingWilson@gmail.com</a></li>
-	<li><a href = "https://www.linkedin.com/profile/view?id=291725698">Linkedin</a>  </li>
-	<li><a href = "https://github.com/mwgeneral">Github</a></li>
-</ul>
+	<b>CONTACT</b>
+	<ul>
+		<li>Phone: 704-208-9201  </li>
+		<li>E-Mail: <a href="mailto:Maxwell.KingWilson@gmail.com" target="_top">Maxwell.KingWilson@gmail.com</a></li>
+		<li><a href = "https://www.linkedin.com/profile/view?id=291725698">Linkedin</a>  </li>
+		<li><a href = "https://github.com/mwgeneral">Github</a></li>
+	</ul>
 <b>OVERVIEW</b>
 
 <ul>
@@ -72,9 +78,9 @@ h1 {
 
 <b>FRAMEWORKS</b>
 <ul>
-	<li>     XNA</li>
-	<li>     UNITY</li>
-	<li>     LIBgdx</li>
+	<li>XNA</li>
+	<li>UNITY</li>
+	<li>LIBgdx</li>
 </ul>
 
 
@@ -106,7 +112,7 @@ h1 {
 	<li>        FSCJ Learning Center Award For Exceptional Tutor</li>
 </ul>
 </div>
-
+<A NAME="portfolio">
 <h1>Game Design</h1>
 <center>
 <table style="width:50%">
@@ -136,4 +142,11 @@ h1 {
 </table>
 </center>
 </body>
+<script>
+$("button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".second").offset().top},
+        'slow');
+});
+</script>
 </html>
