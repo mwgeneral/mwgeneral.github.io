@@ -12,7 +12,6 @@
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      if (target.length) {
@@ -51,7 +50,7 @@
 <h1>MAXWELL KING-WILSON</h1>
 </center>
 <A NAME="contact">
-<div style ="margin-left:30%">
+<div>
 	<b>CONTACT</b>
 	<ul>
 		<li>Phone: 704-208-9201  </li>
@@ -134,7 +133,7 @@
 </ul>
 </div>
 <A NAME="portfolio">
-<h1>Game Design</h1>
+<h1 style="text-align: center;">Game Design</h1>
 <center>
 <table style="width:50%">
 
@@ -150,7 +149,7 @@
 </table>
 </center> 
 
-<br><h1>Web Design</h1>
+<br><h1 style = "text-align: center;">Web Design</h1>
 <center>
 <table style="width:50%">
 	<tr>
